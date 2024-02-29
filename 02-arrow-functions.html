@@ -12,7 +12,15 @@
 
 
 
-    //1ª Digitação (aqui) 
+  // Função sintaxe tradicional
+  function nomeDaFuncao(){
+    exibirNaTela('Função da sintaxe tradicional...');
+  }
+
+  // Função anônima
+  var outraFuncao = function (){
+    exibirNaTela('Outra forma de declarar função...');
+  }
 
 
 
@@ -28,11 +36,16 @@
 
 
 
-    //2ª Digitação (aqui) 
+    function exercicio(valor1, valor2) {
+      return valor1 - valor2;
+    }
+
+    let resultado = exercicio(10,3);
+    exibirNaTela(resultado)
 
 
 
-    exibirNaTela(resultado);
+    
 
     /* Arrow Function (função seta/ flecha)
     Possibilita diversas sintaxes, e até simplificação */
@@ -45,7 +58,7 @@
 
     const ola = nome => exibirNaTela('Olá ' + nome);
 
-    ola('Ignacio');
+    ola('Lara');
 
     // Versão simplificada (Arrow function com retorno IMPLÍCITO)
     const metade = valor => valor / 2;
@@ -66,9 +79,29 @@
     - Monte uma arrow function que receba um nome de pessoa e a converta para letras maiúsculas.
     - Chame a função 3x (passando nomes diferentes) e exibindo no console e tela os resultados */
 
+    const converterParaMaiusculas = (nome) => {
+  return nome.toUpperCase();
+};
+
+// Chamando a função e exibindo os resultados
+const nome1 = "Lara";
+const nome2 = "Anderson";
+const nome3 = "Leonardo";
+
+console.log(converterParaMaiusculas(nome1)); // Saída: LARA 
+console.log(converterParaMaiusculas(nome2)); // Saída: ANDERSON 
+console.log(converterParaMaiusculas(nome3)); // Saída: LEONARDO
+
+document.write(converterParaMaiusculas(nome1));
+document.write("<br>")
+document.write(converterParaMaiusculas(nome2));
+document.write("<br>")
+document.write(converterParaMaiusculas(nome3));
+
+
     
 
-    //3ª Digitação (aqui) 
+  
 
 
 
